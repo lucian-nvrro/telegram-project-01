@@ -11,3 +11,7 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 })
+
+app.get("/hello", (req, res)=>{
+    res.send("Hello there!");
+})
